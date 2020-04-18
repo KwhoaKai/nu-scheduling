@@ -20,7 +20,8 @@ void main() {
             "/": (BuildContext context) => Wrapper(),
             "/invitepage": (BuildContext context) => InvitePage(),
             "/createmeeting": (BuildContext context) => MeetCreationPage(),
-          },)
+          },
+        )
         );
       })));
 }

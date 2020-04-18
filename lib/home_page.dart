@@ -54,7 +54,9 @@ class HomePage extends StatelessWidget {
             return AlertDialog(actions: <Widget>[
               MaterialButton(
                 elevation: 5.0,
-                child: Text("Change Location"),
+                child: invite.getName == "You"
+                ? Text("Change Location")
+                : Container(),
                 onPressed: () {
                   _createLocationDialog(invite);
                 },
